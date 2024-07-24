@@ -37,13 +37,14 @@
  * reasonably feasible for technical reasons, the Appropriate Legal Notices must
  * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
+define('BASE_PATH', __DIR__);
 
 use App\Install\Service\InstallPreChecks;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 
-require __DIR__ . '/../config/bootstrap.php';
-require __DIR__ . '/../vendor/autoload.php';
+require BASE_PATH. '/../config/bootstrap.php';
+require BASE_PATH. '/../vendor/autoload.php';
 
 $log = new Logger('install.log');
 $log->pushHandler(new StreamHandler('../logs/install.log', Logger::DEBUG));

@@ -3,3 +3,5 @@ logs
 composer.lock
 node_modules
 public/resources
+public/dist
+.angular
