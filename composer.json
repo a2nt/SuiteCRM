@@ -1,0 +1,38 @@
+{
+  "name": "a2nt/suitecrm-test",
+  "description": "SuiteCRM Application",
+  "minimum-stability": "dev",
+  "prefer-stable": false,
+  "suggest": {
+    "ext-imap": "Needed for emails module"
+  },
+  "require": {
+    "ext-curl": "*",
+    "ext-gd": "*",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "ext-pdo": "*",
+    "ext-zip": "*",
+    "silverstripe/vendor-plugin": "^1.0",
+    "salesagility/suitecrm": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/salesagility/SuiteCRM-Core"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "wikimedia/composer-merge-plugin": true,
+      "symfony/flex": true,
+      "composer/installers": true,
+      "silverstripe/vendor-plugin": true
+    }
+  },
+  "extra": {
+    "expose": [
+      "client/dist"
+    ]
+  }
+}

@@ -1,0 +1,1 @@
++ Build or link required SuiteCRM assets using webpack to public
